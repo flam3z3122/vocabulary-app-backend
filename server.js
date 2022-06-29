@@ -29,7 +29,7 @@ function extract(word, this_response) {
   const options = {
     host: "od-api.oxforddictionaries.com",
     port: "443",
-    path: "/api/v2/entries/en-us/" ,
+    path: "/api/v2/entries/en-us/" + word,
     method: "GET",
     headers: {
       'app_id': app_id,
